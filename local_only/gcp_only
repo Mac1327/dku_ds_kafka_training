@@ -1,0 +1,22 @@
+http://35.194.48.161:11000
+
+sudo apt-get update -y && sudo apt-get upgrade -y && sudo apt install net-tools
+
+sudo apt install default-jdk -y
+sudo apt-get install zookeeperd -y
+
+
+netstat -ant | grep :2181
+
+
+wget https://archive.apache.org/dist/kafka/3.2.0/kafka_2.13-3.2.0.tgz
+
+sudo mkdir /opt/Kafka
+
+sudo tar -xvf kafka_2.13-3.2.0.tgz -C /opt/Kafka/
+
+
+# sudo vim >>> 1195725856
+/opt/Kafka/kafka_2.13-3.2.0/config/server.properties
+
+sudo /opt/Kafka/kafka_2.13-3.2.0/bin/kafka-server-start.sh /opt/Kafka/kafka_2.13-3.2.0/config/server.properties

@@ -1,0 +1,13 @@
+Addd download haar cascade
+
+* Run producer.py from your terminal ()
+
+
+For project A download the .xml model for the following link
+Save in a managed folder 
+Create a project variable haar_eyes with the location of the .xml file
+something like the following 
+{
+      "haar_eyes": "/Users/martin/data/design10/managed_folders/VIDEO_STREAM/z6YdcYRj/haarcascade_eye.xml",
+}
+ADD LINK 
